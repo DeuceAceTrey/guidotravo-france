@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="" />
+    <link rel="shortcut icon" href="">
+
+    <link rel="stylesheet" href="{{ asset('globals.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('styleguide.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('style1.css') }}" type="text/css">
+    {# <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"> #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" type="text/css">
+
+
+    <title>{% block title %}AVONOVA : Solutions de Vente Immobilière pour Notaires et Avocats{% endblock %}</title>
+    {% block description %}
+        <meta name="description" content="AVONOVA propose aux notaires et avocats une solution clé en main pour la mise en vente de biens immobiliers. Maximisez l'efficacité de vos transactions sans affecter vos commissions. Découvrez comment notre équipe peut vous faire gagner un temps précieux." />
+    {% endblock %}
+    {% block keywords %}
+        <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+    {% endblock %}
+    {% block canonical %}
+        <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+    {% endblock %}
+
+    <meta name="robots" content="index, follow">
+
+    {% block stylesheets %}
+    {% endblock %}
+
+    {% block javascripts %}
+    {% endblock %}
+</head>
+<body>
+{% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        {{ message }}
+    </div>
+{% endfor %}
+
+{% block body %}{% endblock %}
+
+
+<script async>
+    function toggleNavbar() {
+        var links = document.getElementById("navbarLinks");
+        if (links.classList.contains("active")) {
+            links.classList.remove("active");
+        } else {
+            links.classList.add("active");
+        }
+    }
+</script>
+</body>
+</html>

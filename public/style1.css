@@ -1,0 +1,125 @@
+.categoryButton{
+  height: 90px;
+    width: 95%;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-left: 2%;
+    box-shadow: rgba(100, 100, 100, 0.7) 0px 5px 10px;
+}
+.categoryText1{
+  font-size: 18px;color: black;font-weight: bold;text-align: left;
+}
+.categoryText2{
+  font-size: 14px;color: #E7005A;margin-top: 10px;text-align: left;
+}
+.categoryA{
+  font-size: 20px;margin-top: 30px;color: #E7005A;
+}
+.categoryText2-green{
+  font-size: 14px;color: #6CC51D;margin-top: 10px;text-align: left;
+}
+.categoryA-green{
+  font-size: 20px;margin-top: 30px;color: #6CC51D;
+}
+.text-wrapper-1-red{
+  color: #E7005A;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+ /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.text-wrapper-1-black{
+  color: #000000;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+ /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.text-wrapper-1-green{
+  color: #6CC51D;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+ /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.fa-arrow-down:before {
+  font-size: 30px;
+  color: #6CC51D;
+}
+.arrow-green:before {
+  font-size: 30px;
+  color: #6CC51D;
+}
+.ellipseNone {
+  width: 80%;
+  padding-top: 50%;
+  /* background-color: #6cc51d; */
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: auto;
+  max-width: 66%;
+}
+.ellipseBig {
+  width: 80%;
+  padding-top: 50%;
+  background-color: #6cc51d;
+  border-radius: 100%;
+  margin: auto;
+  margin-bottom: auto;
+  max-width: 66%;
+}
+.button-red{
+  background-image: url(./img/rectangle-2.svg);
+}
+.button-gray{
+  background-image: url(./img/rectangle-3.svg);
+}
+.button-green{
+  background-image: url(./img/rectangle-4.svg);
+}
+
+.fa-lock {  
+  margin-right: 15px;
+}
+.fa-unlock {  
+  margin-right: 15px;
+}
+
+.fa-arrow-right{
+  margin-left:15px;
+  margin-right: 15px;
+}

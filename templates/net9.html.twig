@@ -1,0 +1,84 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Points de vigilance{% endblock %}
+{% block description %}
+    <meta name="description" content="Points de vigilance" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+{# flex-direction: row;  justify-content: space-between; #}
+{% block body %}
+
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        {# <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()">☰</div> #}
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="location.href='/category';">☰</div>
+        <div class="navbar-text">Points de vigilance</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div><a href="{{url('app_netend')}}"><i class="fa fa-arrow-right"></i></a></div>
+    </nav>
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/11.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height: 550px;">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-green">
+                        5 cas particuliers rencontrés 
+                        <br />sur les chantiers</span>
+                    </p>
+                    <div class="paragraph">
+                        <p class="p">Cliquez pour savoir comment les traiter.
+                            <br>    </p>
+                    </div>       
+                    <div class="primary-button button-green">
+                        <div class="title">
+                            <a class="primary-a" href="{{ url('app_net91') }}">
+                                Robinet d’eau extérieur </a>
+                        </div>
+                    </div>
+                    <div class="primary-button button-green">
+                        <div class="title">
+                            <a class="primary-a" href="{{ url('app_net92') }}">
+                                Descente des eaux pluviales  </a>
+                        </div>
+                    </div>
+                    <div class="primary-button button-green">
+                        <div class="title">
+                            <a class="primary-a" href="{{ url('app_net93') }}">
+                                Pompe à chaleur (PAC) </a>
+                        </div>
+                    </div>
+                    <div class="primary-button button-green">
+                        <div class="title">
+                            <a class="primary-a" href="{{ url('app_net94') }}">
+                                Grille d’aération </a>
+                        </div>
+                    </div>
+                    <div class="primary-button button-green">
+                        <div class="title">
+                            <a class="primary-a" href="{{ url('app_net95') }}">
+                                Arrêt latéral </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

@@ -1,0 +1,220 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Offres GuidoTravo : Assurez la Conformité de vos Projets de Construction{% endblock %}
+{% block description %}
+    <meta name="description" content="Explorez les offres de GuidoTravo pour assurer le respect des référentiels de contrôle et des normes de qualité dans vos projets de construction. Nos solutions sont conçues pour faciliter la gestion de la conformité à chaque étape de votre projet." />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="Services de conformité bâtiment, solutions de contrôle qualité, GuidoTravo offres, respect des normes de construction, guide référentiel bâtiment." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        {# <div class="menu-burger" onclick="toggleNavbar()">☰</div> #}
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="location.href='/category';">☰</div>
+        <div class="navbar-text">Nos Formules</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_index') }}">Accueil</a>            
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div></div>
+    </nav>
+
+
+
+    <div class="FORMULES">
+        <div class="div">
+            <div class="formules">
+                <div class="essentiel-PME">
+                    <div class="frame">
+                        <div class="publique"><div class="text-wrapper">Essentiel&nbsp;&nbsp;Gratuite</div></div>
+                        <div class="tarif">
+                            <div class="text-wrapper-2">0€HT</div>
+                            <div class="text-wrapper-3">/an</div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <img class="divider-line" src="https://c.animaapp.com/utlLrkL0/img/divider-line-3.svg" />
+                    </div>
+                    <div class="details">
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">Conformité CEE et MPR</div>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="text-wrapper-4">Règles de l’art “parties courantes”</p>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">1 utilisateur</div>
+                        </div>
+                        <div class="description-2">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="p">Pas d’assistance technique pour les cas particuliers</p>
+                        </div>
+                    </div>
+                    <button class="button">
+                        <button class="CTA">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <div class="text">Choisir cette offre</div>
+                            </a>
+                        </button>
+                    </button>
+                </div>
+                <div class="essentiel-PME">
+                    <div class="frame">
+                        <div class="publique"><div class="text-wrapper">Essentiel&nbsp;&nbsp;artisan</div></div>
+                        <div class="tarif">
+                            <div class="text-wrapper-2">690€HT</div>
+                            <div class="text-wrapper-3">/an</div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <img class="divider-line" src="https://c.animaapp.com/utlLrkL0/img/divider-line-3.svg" />
+                    </div>
+                    <div class="details">
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">Conformité CEE et MPR</div>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="text-wrapper-4">Règles de l’art “parties courantes”</p>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">Jusqu’à 10 utilisateurs</div>
+                        </div>
+                        <div class="description-2">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="p">1h d’assistance technique pour les cas particuliers</p>
+                        </div>
+                    </div>
+                    <button class="button">                        
+                        <button class="div-wrapper">
+                            <a href="https://buy.stripe.com/bIY4gs7GX3nydGw28a" target="_blank" rel="noopener noreferrer"
+                            ><div class="text">Choisir cette offre</div></a>
+                        </button>
+                    </button>
+                </div>
+                <div class="essentiel-PME">
+                    <div class="frame">
+                        <div class="publique"><div class="text-wrapper">Essentiel&nbsp;&nbsp;PME</div></div>
+                        <div class="tarif">
+                            <div class="text-wrapper-2">1 790€HT</div>
+                            <div class="text-wrapper-3">/an</div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <img class="divider-line" src="https://c.animaapp.com/utlLrkL0/img/divider-line-3.svg" />
+                    </div>
+                    <div class="details">
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">Conformité CEE et MPR</div>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="text-wrapper-4">Règles de l’art “parties courantes”</p>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">Jusqu’à 30 utilisateurs</div>
+                        </div>
+                        <div class="description-2">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="p">3h d’assistance technique pour les cas particuliers</p>
+                        </div>
+                    </div>
+                    <button class="button">
+                        <button class="CTA">
+                            <a href="https://buy.stripe.com/6oE5kw9P53nycCs6or" target="_blank" rel="noopener noreferrer"
+                            ><div class="text">Choisir cette offre</div></a
+                            >
+                        </button>
+                    </button>
+                </div>
+                <div class="essentiel-PME">
+                    <div class="frame">
+                        <div class="essentiel-PREMIUM-wrapper"><div class="text-wrapper">Essentiel&nbsp;&nbsp;PREMIUM</div></div>
+                        <div class="group">
+                            <div class="text-wrapper-5">à partir de :</div>
+                            <div class="tarif-2">
+                                <div class="text-wrapper-2">2 390€HT</div>
+                                <div class="text-wrapper-3">/an</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <img class="divider-line" src="https://c.animaapp.com/utlLrkL0/img/divider-line-3.svg" />
+                    </div>
+                    <div class="details-2">
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <div class="text-wrapper-4">Conformité CEE et MPR</div>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="text-wrapper-4">Règles de l’art “parties courantes”</p>
+                        </div>
+                        <div class="description">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="text-wrapper-4">A partir de 50 utilisateurs</p>
+                        </div>
+                        <div class="description-2">
+                            <div class="check-mark">
+                                <img class="union" src="https://c.animaapp.com/utlLrkL0/img/union-11.svg" />
+                            </div>
+                            <p class="p">10h d’assistance technique pour les cas particuliers</p>
+                        </div>
+                    </div>
+                    <button class="button">
+                        <button class="div-wrapper">
+                            <a href="https://buy.stripe.com/5kAbIU4uL0bmeKAcMQ" target="_blank" rel="noopener noreferrer"
+                            ><div class="text">Choisir cette offre</div></a
+                            >
+                        </button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

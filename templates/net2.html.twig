@@ -1,0 +1,202 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Pose rail de départ{% endblock %}
+{% block description %}
+    <meta name="description" content="Pose rail de départ" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+{# flex-direction: row;  justify-content: space-between; #}
+{% block body %}
+
+{#  #}
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        {# <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()">☰</div> #}
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="location.href='/category';">☰</div>
+        <div class="navbar-text">Pose rail de départ</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div><a href="{{url('app_net21')}}"><i class="fa fa-arrow-right"></i></a></div>
+    </nav>       
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-green">
+                        6 règles à respecter pour<br />constituer une base solide</span>
+                    </p>                    
+                    <div class="primary-button button-green">
+                    <div class="title">
+                        <a class="primary-a" href="{{ url('app_offers') }}">
+                        {# <i class="fa fa-lock"></i> #}
+                        Découvrez toutes les règles  </a>
+                        <i class="fa fa-arrow-right"></i>
+                        </div></div>
+                    <div class="paragraph">
+                        <p class="p">Pour découvrir une partie du contenu,</br> c’est par ici !</p>
+                    </div>                    
+                    <div>
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-2.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Hauteur du rail sur sol naturel
+                        <br />(conseillé pour tous les sols)</span>
+                    </p>                    
+                    
+                    <div class="paragraph">
+                        <p class="p"> Fixez le rail à 15 cm minimum du sol.</p>
+                    </div>                    
+                    <div class="primary-button button-green">
+                        <div class="title">
+                        {# <i class="fa-thin fa-lock-keyhole"></i> #}
+                        <a class="primary-a" href="#">Autres hauteurs possibles</a>
+                        {# <i class="fa fa-arrow-right"></i> #}
+                        </div></div>
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-3.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Nombre de fixations<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-4.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Fixations aux <br />extrémités de rail</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-5.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Découpe des angles sortants<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-6.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Espacement entre les rails<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-7.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Jonction des rails<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/3-8.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:150px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Réduction de la lame d’air<br />(uniquement si encollage en plot)</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>
+                    <div class="paragraph" style="display: flex; flex-direction: row;justify-content:space-between;">
+                        <p style="color: #6CC51D;font-style: italic;text-align:left">
+                            Une fois la pose réalisée,</br>rendez-vous à la prochaine étape.</p>
+                        <div style="margin-left: 50px;">
+                            <a href="{{url('app_net21')}}">
+                            <i class="fa fa-arrow-right arrow-green"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

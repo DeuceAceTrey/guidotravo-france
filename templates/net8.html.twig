@@ -1,0 +1,104 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Les appuis de fenêtre {% endblock %}
+{% block description %}
+    <meta name="description" content="Les appuis de fenêtre " />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+{# flex-direction: row;  justify-content: space-between; #}
+{% block body %}
+
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        {# <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()">☰</div> #}
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="location.href='/category';">☰</div>
+        <div class="navbar-text">Les appuis de fenêtre </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div><a href="{{url('app_net9')}}"><i class="fa fa-arrow-right"></i></a></div>
+    </nav>
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/10-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-green">
+                        2 points de vigilance
+                        <br /> avant de lancer la fabrication</span>
+                    </p>                    
+                    <div class="primary-button button-green">
+                    <div class="title">
+                        <a class="primary-a" href="{{ url('app_offers') }}">
+                        {# <i class="fa fa-lock"></i> #}
+                        Découvrez toutes les règles  </a>
+                        <i class="fa fa-arrow-right"></i>
+                        </div></div>
+                    <div class="paragraph">
+                        <p class="p">Consultez la première règle 
+                            <br>    </p>
+                    </div>                    
+                    <div>
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/10-2.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Relevés latéraux et rejingot<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">Veillez à poser un appui qui remonte 
+                        <br>sous la fenêtre et sur les tableaux.
+                        <br>Ces relevés doivent être d’au
+                        <br>moins 1,5 cm
+                        </p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/10-3.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Goutte d’eau</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

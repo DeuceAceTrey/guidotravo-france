@@ -1,0 +1,104 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Robinet d’eau extérieur{% endblock %}
+{% block description %}
+    <meta name="description" content="Robinet d’eau extérieur" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()"> </div>
+        <div class="navbar-text">Robinet d’eau extérieur</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div>
+            <a href="{{url('app_net9')}}">
+                <div style="font-size: 25px;margin-right: 20px;font-family: sans-serif;">
+                X</div>
+            </a>
+        </div>
+    </nav>    
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/12-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:auto">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Déplacement des <br />tuyaux d’eau </span>
+                    </p>                    
+
+                    <div class="paragraph">
+                        <p class="p">Veillez à déporter les tuyaux <br>
+                        d’arrivée d’eau.                        
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/12-2.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:auto">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Ce qu’il ne faut pas faire</span>
+                        <span class="text-wrapper-1-green">
+                        1/2</span>
+                    </p>                    
+
+                    <div class="paragraph">
+                        <p class="p">Ne pas encapsuler le réseau d’eau dans 
+                        <br> l’isolant.
+                        </p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/12-3.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:auto">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Ce qu’il ne faut pas faire</span>
+                        <span class="text-wrapper-1-green">
+                        2/2</span>
+                    </p>                    
+
+                    <div class="paragraph">
+                        <p class="p">Ne pas appliquer de morcellement 
+                        <br> de l’isolant.
+                        </p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

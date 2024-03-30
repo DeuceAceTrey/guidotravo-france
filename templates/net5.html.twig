@@ -1,0 +1,80 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Espacement des panneaux{% endblock %}
+{% block description %}
+    <meta name="description" content="Espacement des panneaux" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        {# <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()">☰</div> #}
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="location.href='/category';">☰</div>
+        <div class="navbar-text">Espacement des panneaux</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div>
+            <a href="{{url('app_net6')}}">
+            <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </nav>    
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/fiche-contr-le-ite-v3-0-4.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:auto">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        2 méthodes pour combler 
+                        <br />les espaces</span>
+                    </p>
+                    <div class="paragraph">
+                        <p class="p">Appliquez la bonne réparation selon les cas,<br /> cliquez pour tout savoir.</p>
+                    </div>  
+                    <div class="primary-button button-gray">
+                        <div class="title">
+                        <a class="primary-a" href="#">
+                            <i class="fa fa-lock"></i>
+                            Espacement inférieur à 1 cm </a>
+                        {# <i class="fa fa-arrow-right"></i> #}
+                        </div>
+                    </div>
+                    <div class="primary-button button-gray">
+                        <div class="title">
+                        <a class="primary-a" href="#">
+                        <i class="fa fa-lock"></i>
+                        Espacement supérieur à 1 cm </a>
+                        {# <i class="fa fa-arrow-right"></i> #}
+                        </div>
+                    </div>
+
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>          
+                              
+                    <div class="primary-button button-green">
+                        <div class="title"><i class="fa-thin fa-lock-keyhole"></i>
+                        <a class="primary-a" href="{{ url('app_offers') }}">Découvrez les offres </a>
+                        <i class="fa fa-arrow-right"></i>
+                        </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

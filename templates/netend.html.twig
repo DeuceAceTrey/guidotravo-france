@@ -1,0 +1,53 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Votre Guide de Conformité dans le Bâtiment{% endblock %}
+{% block description %}
+    <meta name="description" content="GuidoTravo est votre partenaire pour garantir le respect des normes et référentiels dans le bâtiment. Découvrez comment notre guide peut simplifier le contrôle de conformité et améliorer la qualité de vos projets de construction." />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+
+{% block body %}    
+    <div class="home">
+        <div class="div">
+            <div class="overlap" style="height: 300px;">
+                <div class="ellipseBig"></div>
+                <img class="fiche-contrle-ITE" src="img/fiche-contr-le-ite-v3-0-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 90px;">
+                <div class="frame">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper">Bienvenue sur<br /></span>
+                        <span class="span">Bravo !</span>                        
+                    </p>
+                    <div class="paragraph">
+                        <p class="p">Les règles CEE n’ont maintenant plus de <br>
+                        secrets pour vous.
+                        </p>
+                    </div>
+                    <div class="primary-button button-red">
+                        <div class="title">
+                        {# <i class="fa-thin fa-lock-keyhole"></i> #}
+                        <a class="primary-a" href="{{url('category')}}">Retour aux catégories </a>
+                        {# <i class="fa fa-arrow-right"></i> #}
+                        </div>
+                    </div>
+                    <div class="primary-button button-green">
+                        <div class="title">
+                        {# <i class="fa-thin fa-lock-keyhole"></i> #}
+                        <a class="primary-a" href="{{url('app_offers')}}">Découvrez nos offres </a>
+                        <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

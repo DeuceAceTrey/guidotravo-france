@@ -1,0 +1,181 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Category{% endblock %}
+{% block description %}
+    <meta name="description" content="Category" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+{# flex-direction: row;  justify-content: space-between; #}
+{% block body %}
+
+{# https://www.figma.com/file/TIJqTxhlb5t21m4eYvQqfY/Version-Abonnetonsite-(Copy)?type=design&node-id=0-1&mode=design&t=EUTvoJB0ynR7leDr-0 #}
+    <nav class="navbar" style="">        
+        <div class="navbar-text" style="margin-top:20px">Catégories</div>        
+    </nav>
+
+    <div class="home" style="padding-top:20px">
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net1';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Nettoyage et préparation
+                    </div>                    
+                    <div class="text categoryText2">
+                        3 étapes pour préparer le support
+                    </div>                    
+                </a>
+                <div class="categoryA">
+                    <i class="fa fa-lock"></i>                    
+                <div>
+            </button>
+        </div>
+        
+
+        <div style="padding-bottom: 20px;">         
+            <button class="categoryButton" onclick="location.href='/net2';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Pose du rail de départ
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        6 règles pour constituer une base solide
+                    </div>                    
+                </a>
+                <div class="categoryA-green">                    
+                    <i class="fa fa-unlock"></i>
+                <div>
+            </button>
+        </div>
+
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net3';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Pose des panneaux d’isolant
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        6 point de vigilance pour une pose parfaite
+                    </div>                    
+                </a>
+                <div class="categoryA">
+                    <i class="fa fa-lock"></i>                    
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net4';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Encollage et fixation 
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        5 règles selon votre type de pose
+                    </div>                    
+                </a>
+                <div class="categoryA">
+                    <i class="fa fa-lock"></i>
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net5';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Espacement des panneaux 
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        2 méthodes pour combler les espaces
+                    </div>                    
+                </a>
+                <div class="categoryA">
+                    <i class="fa fa-lock"></i>
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net6';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Pose des renforts
+                    </div>                    
+                    <div class="text categoryText2">
+                        6 points clés pour une protection optimale
+                    </div>                    
+                </a>
+                <div class="categoryA">
+                    <i class="fa fa-lock"></i>                    
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net7';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Pose de l’enduit 
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        2 rappels pour une finition parfaite
+                    </div>                    
+                </a>
+                <div class="categoryA">
+                    <i class="fa fa-lock"></i>
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net8';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Appuis de fenêtre
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        2 mesures avant de lancer la fabrication
+                    </div>                    
+                </a>
+                <div class="categoryA-green">
+                    <i class="fa fa-unlock"></i>
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/net9';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Points de vigilance 
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        5 cas particuliers rencontrés sur vos chantiers
+                    </div>                    
+                </a>
+                <div class="categoryA-green">                    
+                    <i class="fa fa-unlock"></i>
+                <div>
+            </button>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <button class="categoryButton" onclick="location.href='/offres';">
+                <a href="#" rel="noopener noreferrer" style="margin-top: 20px;margin-left: 10px;">                
+                    <div class="text categoryText1">
+                        Nos formules d’abonnement
+                    </div>                    
+                    <div class="text categoryText2-green">
+                        3 offres adaptées à vos besoins 
+                    </div>                    
+                </a>
+                <div class="categoryA-green">
+                    <i class="fa fa-unlock"></i>
+                <div>
+            </button>
+        </div>
+
+
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

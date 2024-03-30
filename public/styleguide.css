@@ -1,0 +1,31 @@
+:root {
+  --paragraph-1-font-family: "Poppins", Helvetica;
+  --paragraph-1-font-weight: 500;
+  --paragraph-1-font-size: 15px;
+  --paragraph-1-letter-spacing: 0.45px;
+  --paragraph-1-line-height: normal;
+  --paragraph-1-font-style: normal;
+}
+
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --caption-semibold-font-family: "Inter", Helvetica;
+  --caption-semibold-font-weight: 600;
+  --caption-semibold-font-size: 10px;
+  --caption-semibold-letter-spacing: 0px;
+  --caption-semibold-line-height: 18px;
+  --caption-semibold-font-style: normal;
+  --display-sm-semibold-font-family: "Inter", Helvetica;
+  --display-sm-semibold-font-weight: 600;
+  --display-sm-semibold-font-size: 30px;
+  --display-sm-semibold-letter-spacing: 0px;
+  --display-sm-semibold-line-height: 38px;
+  --display-sm-semibold-font-style: normal;
+  --text-xs-regular-font-family: "Inter", Helvetica;
+  --text-xs-regular-font-weight: 400;
+  --text-xs-regular-font-size: 12px;
+  --text-xs-regular-letter-spacing: 0px;
+  --text-xs-regular-line-height: 18px;
+  --text-xs-regular-font-style: normal;
+  --shadow-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}

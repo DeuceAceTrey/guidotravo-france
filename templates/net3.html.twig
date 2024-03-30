@@ -1,0 +1,195 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Pose des panneaux d’isolant{% endblock %}
+{% block description %}
+    <meta name="description" content="Pose des panneaux d’isolant" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+{# flex-direction: row;  justify-content: space-between; #}
+{% block body %}
+
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        {# <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()">☰</div> #}
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="location.href='/category';">☰</div>
+        <div class="navbar-text">Pose des panneaux d’isolant</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        <div><a href="{{url('app_net4')}}"><i class="fa fa-arrow-right"></i></a></div>
+    </nav>       
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-green">
+                        6 points de vigilance pour une 
+                        <br />pose parfaite</span>
+                    </p>                    
+                    <div class="primary-button button-green">
+                    <div class="title">
+                        <a class="primary-a" href="{{ url('app_offers') }}">
+                        {# <i class="fa fa-lock"></i> #}
+                        Découvrez toutes les règles  </a>
+                        <i class="fa fa-arrow-right"></i>
+                        </div></div>
+                    <div class="paragraph">
+                        <p class="p">Contenu non disponible, visualisez les <br>étapes de cette catégorie</p>
+                    </div>                    
+                    <div>
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Distance entre les jonctions<br />de rails et de panneaux</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-2.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Découpe pour les ouvertures</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-3.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Taille mini des panneaux<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-4.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Décalage des panneaux<br />entre eux</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-5.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:100px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Harpage dans les angles<br /></span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-6.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:150px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Désolidarisation du point dur <br />(ex sur cache moineau)</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/5-6a.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:150px">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Ce qu’il ne faut pas faire<br />(ex sur cache moineau)</span>
+                    </p>                    
+                    <div class="paragraph">
+                        <p class="p">*Contenu non disponible dans cette version</p>
+                    </div>
+                    <div class="paragraph" style="display: flex; flex-direction: row;justify-content:space-between;">
+                        <p style="color: #6CC51D;font-style: italic;text-align:left">
+                            Avant de poser les panneaux, </br>vérifiez les règles d’encollage.</p>
+                        <div style="margin-left: 50px;">
+                            <a href="{{url('app_net4')}}">
+                            <i class="fa fa-arrow-right arrow-green"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

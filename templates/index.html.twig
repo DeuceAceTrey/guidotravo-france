@@ -1,0 +1,52 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Votre Guide de Conformité dans le Bâtiment{% endblock %}
+{% block description %}
+    <meta name="description" content="GuidoTravo est votre partenaire pour garantir le respect des normes et référentiels dans le bâtiment. Découvrez comment notre guide peut simplifier le contrôle de conformité et améliorer la qualité de vos projets de construction." />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar">
+        <div class="menu-burger" onclick="toggleNavbar()">☰</div>
+        <div class="navbar-text">Accueil</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>            
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipse"></div>
+                <img class="fiche-contrle-ITE" src="img/fiche-contr-le-ite-v3-0-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 90px;">
+                <div class="frame">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper">Bienvenue sur<br /></span>
+                        <span class="span">Guidoaro</span>
+                        <span class="text-wrapper-2">Travo </span>
+                        <span class="text-wrapper-3"></span>
+                    </p>
+                    <div class="paragraph">
+                        <p class="p">Le guide clair et net pour contrôler le respect des référentiels de contrôle !</p>
+                    </div>
+                    <div class="primary-button"><div class="title">
+                        <a class="primary-a" href="{{ url('category') }}">C'est parti</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}

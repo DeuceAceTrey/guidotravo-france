@@ -1,0 +1,84 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GuidoTravo : Autres hauteurs possibles{% endblock %}
+{% block description %}
+    <meta name="description" content="Autres hauteurs possibles" />
+{% endblock %}
+
+{% block keywords %}
+    <meta name="keywords" content="GuidoTravo, guide de conformité bâtiment, référentiels de contrôle construction, assurance qualité bâtiment, normes de construction." />
+{% endblock %}
+{% block canonical %}
+    <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar" style="flex-direction:row; justify-content:space-between;">
+        <div class="menu-burger" style="position: sticky;margin-right: 15px;" onclick="toggleNavbar()">☰</div>
+        <div class="navbar-text">Autres hauteurs possibles</div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="{{ url('app_offers') }}">Nos formules</a>
+            {# {{ include('_partials/header.html.twig') }} #}
+            <a href="#">À propos</a>
+            <a href="{{ url('app_contact') }}">Contact</a>
+        </div>
+        
+        <div>  
+            <a href="{{url('app_net3')}}"><i class="fa fa-arrow-right"></i></a>
+        </div>
+        <div>
+            <a href="{{url('app_net2')}}">
+                <div style="font-size: 25px;margin-right: 20px;font-family: sans-serif;">X</div>
+            </a>
+        </div>
+    </nav>    
+
+    <div class="home">
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/4-1.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:auto">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Hauteur du rail sur balcon <br />(avec pente extérieur)</span>
+                    </p>                    
+
+                    <div class="paragraph">
+                        <p class="p">Placez le rail à 1 cm minimum du balcon.<br>
+                        Attention la pose d’une plinthe est <br>
+                        nécessaire si le balcon n’est pas abrité.</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="overlap">
+                <div class="ellipseNone"></div>
+                <img class="fiche-contrle-ITE" src="img/4-2.png" />
+            </div>
+            <div class="overlap-group" style="margin-top: 100px;">
+                <div class="frame" style="height:auto">
+                    <p class="bienvenue-sur">
+                        <span class="text-wrapper-1-black">
+                        Absence de rail sur terrasse <br />(avec pente extérieur)</span>
+                    </p>                    
+
+                    <div class="paragraph">
+                        <p class="p">Posez les panneaux d’isolant
+                        <br> directement sans rail. 
+                        <br>Attention la pose d’une plinthe est
+                        <br> nécessaire si la terrasse 
+                        <br>n’est pas abritée.</p>
+                    </div>                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ include('_partials/footer.html.twig') }}
+{% endblock %}
